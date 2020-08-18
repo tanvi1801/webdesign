@@ -1,0 +1,253 @@
+body{
+    margin: 0.5%;
+    padding: 0px;
+}
+.sec1_image{
+    background-image: url("https://www.ndtv.com/cooks/images/lamb-salad-620.jpg");
+    width: 100vw;
+    height:60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.text_wrapper{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.text_wrapper h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.text_wrapper p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*for products*/
+.container{
+    display: flex;
+    flex: 1;
+}
+.container div{
+    padding: 1%;
+}
+
+.img1{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-size: cover ; 
+}
+
+/*for further details*/
+.details{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(255, 169, 10, 0.582);
+    color:black;
+    text-align: center;
+}
+
+.owner{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.owner .blogger{
+    max-width: 200px;
+    flex-wrap:0 0 200px ;
+    margin-left:0px;
+
+}
+.owner .blogger img{
+    max-width: 150px;
+    border-radius:50% ;
+}
+.owner .bloggercontent{
+    margin-left:1% ;
+    background-color: rgba(128, 128, 128, 0.418);
+    width: 60%;
+}
+/*second container*/
+.recipes{
+    display: flex;
+    margin: 3%;
+}
+.recipeimgs{
+    width: 40%;
+    height: 1%;
+    margin-right:1% ;
+    
+}
+.recipes .content{
+    width:30%;
+    position: absolute;
+    left: 30%;
+}
+#heading{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(155, 81, 155);
+    font-size: x-large;
+}
+
+.moreposts{
+    display: flex;
+    justify-content: center;
+}
+.more{
+    color: black;
+    border: 2px solid black;
+    width: 20%;
+    text-align: center;
+    margin-right:7% ;
+    padding: 1%;
+    font-weight: bolder;
+    margin-bottom: 3%;
+    
+}
+/*quad container*/
+.container4{
+    display: flex;
+    margin: 1%;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container4 .quad{
+    width: 40%;
+    display: flex;
+    background-color: rgba(124, 167, 124, 0.61);
+    margin: 2%;
+    padding:2% ;   
+
+}
+
+.container4 .quad .cardimages{
+    max-width: 200px;
+    flex-wrap:0 0 200px ;
+
+}
+.container4 .quad .cardimages img{
+    max-width: 100%;
+}
+.container4 .quad .quadcontent{
+    margin-left: 2%;
+}
+
+h3{
+    margin-left: 4%;
+    color:green;
+    font-size: xx-large;
+    font-family: 'Lobster', cursive;
+}
+
+
+
+/*footer*/
+.footer{
+    background-color:rgba(0, 0, 0, 0.836);
+    height: 300px;
+    color: white;
+}
+.footer .footer-content {
+    height: 265px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section{
+    flex: 0.5;
+    border: 0.5px solid rgba(0, 0, 0, 0.623);
+}
+.link{
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    color:white;
+}
+
+.contact,.socials{
+    color:white;
+    font-size: 1rem;
+    margin-left: 8px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+}
+.forminput{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    
+}
+input[type=email]{
+    margin-bottom: 10px;
+    background-color:white;
+    color:black;
+    width: 60%;
+    height: 15%;
+}
+
+#button1{
+    size: large;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.intro,.contact-form{
+    padding-left:3% ;
+}
+.footer-bottom{
+    background-color:rgba(128, 0, 128, 0.068);
+    color:whitesmoke;
+    height: 8%;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    font-size:1.1rem ;
+
+    
+}
+
+
+@media screen and (max-width: 1000px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .owner{
+        flex-direction:column ;
+    }
+    .owner .blogger{
+        margin: 0px auto;
+    }
+    .owner .bloggercontent{
+        width: 100%;
+    }
+    .recipes .content{
+        left: 40%;
+
+    }
+    .container4{
+        display:flex ;
+        flex-direction: column ;
+        justify-content: center;
+    }
+    .container4 .quad{
+        width: 60%;
+    }
+    .recipes .content{
+        width: 100%;
+        font-size: 1.4rem;
+    }
+}  
